@@ -78,5 +78,5 @@ After pushing your laravel project to GitHub, deploy the app in Heroku and click
 ## Cloud Hosted Websites
 - [(Broken) Azure Project Link]().
 - [Heroku Project Link](https://demo-cloud-app.herokuapp.com/).
-- [(Broken) Amazon Web Services Project Link]().
-- [(Broken) Google Cloud Project Link]().
+- [(In-Progress) Amazon Web Services Project Link]().
+- [(In-Progress) Google Cloud Project Link]().
