@@ -5,13 +5,12 @@ version: 0.1
 phases:
   install:
     php: 7.4.1
-    
-  runtime-versions:
-        build:
-            commands:
-                - echo 'Building Services App............'
-                # - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
-                # - mvn -Pamazon clean package
+  
+  build:
+    commands:
+        - echo 'Building Services App............'
+        # - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
+        # - mvn -Pamazon clean package
         
 #artifacts:
     #files: '**/*'
