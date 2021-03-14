@@ -1,26 +1,14 @@
-version: 0.1
-
-
+version: 0.2
 
 phases:
-  install:
-    php: 7.4.1
-  
-  build:
-    commands:
-        - echo 'Building Services App............'
-        # - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
-        # - mvn -Pamazon clean package
+    build:
+        commands:
+            - echo 'Building Services App............'
+            #- mvn -Pamazon clean package
         
-#artifacts:
-    #files: '**/*'
-    #base-directory: target/cloudservices
-    
 artifacts:
-  files:
-    - './**/*'
-  base-directory: public
-  name: Democloudapp
+    files: '**/*'
+    base-directory: public    
 
 cache:
   paths:
