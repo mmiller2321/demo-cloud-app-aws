@@ -1,11 +1,17 @@
-version: 0.2
+version: 0.1
+
+
 
 phases:
-    build:
-        commands:
-            - echo 'Building Services App............'
-            # - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
-            # - mvn -Pamazon clean package
+  install:
+    php: 7.4.1
+    
+  runtime-versions:
+        build:
+            commands:
+                - echo 'Building Services App............'
+                # - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
+                # - mvn -Pamazon clean package
         
 #artifacts:
     #files: '**/*'
@@ -17,6 +23,6 @@ artifacts:
   base-directory: public
   name: Democloudapp
 
-# cache:
-#   paths:
-#     - '/root/.m2/**/*'
+cache:
+  paths:
+    - '/root/.m2/**/*'
