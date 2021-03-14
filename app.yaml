@@ -7,7 +7,7 @@ runtime_config:
 
 beta_settings:
   # Project name - location - database name (Amazon Web Services cloud instance)
-  cloud_sql_instances: demo-cloud-app.us-east-2:mydbinstance
+  cloud_sql_instances: demo-cloud-app.us-east-2:dbname
 
 env_variables:
   # Put production environment variables here.
