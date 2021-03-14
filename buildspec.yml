@@ -4,13 +4,19 @@ phases:
     build:
         commands:
             - echo 'Building Services App............'
-            - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
+            # - sed -i 's/^APP_ENV=.*/APP_ENV=amazon/' .env
             # - mvn -Pamazon clean package
         
-artifacts:
-    files: '**/*'
-    # base-directory: target/cloudservices
+#artifacts:
+    #files: '**/*'
+    #base-directory: target/cloudservices
     
+artifacts:
+  files:
+    - './**/*'
+  base-directory: public
+  name: Democloudapp
+
 # cache:
 #   paths:
 #     - '/root/.m2/**/*'
