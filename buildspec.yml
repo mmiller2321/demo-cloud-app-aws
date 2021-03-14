@@ -8,7 +8,7 @@ phases:
         
 artifacts:
     files: '**/*'
-    base-directory: target/cloudservices
+    # base-directory: target/cloudservices
     
 cache:
   paths:
