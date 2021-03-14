@@ -71,7 +71,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## AWS
+## AWS Cloud Deployment Instructions
 1. Log into AWS and select Services from the main menu.
 2. Select RDS.
 3. Under the Create database section click the Create database button.
