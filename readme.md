@@ -96,15 +96,15 @@ The Laravel framework is open-source software licensed under the [MIT license](h
     - Create your Application Environment by clicking the 'Create one now' link.
     - Select the 'Web server environment' and click the Select button.
     - Fill out the following fields in the Creating web server environment form:
-        ~ From Environment Information Domain: Give your Application a name (i.e., test-app).
-        ~ From Base configuration: Select PHP from the Preconfigured platform options. Upload a ZIP file of your PHP application.
-        ~ Click the Create Environment button. Wait for environment to get built.
-        ~ From the Elastic Beanstalk application screen click the App URL to validate application is running properly.
+        - From Environment Information Domain: Give your Application a name (i.e., test-app).
+        - From Base configuration: Select PHP from the Preconfigured platform options. Upload a ZIP file of your PHP application.
+        - Click the Create Environment button. Wait for environment to get built.
+        - From the Elastic Beanstalk application screen click the App URL to validate application is running properly.
 8. Deploy Manually:
-- Create a ZIP file with all your code (make sure to update APP_ENV to amazon in .env).
-- Log into AWS and select Services from the main menu.
-- Select Elastic Beanstalk. Select your Application.
-- Click the Upload and Deploy button. Upload your ZIP file and give your build a label. Click the Deploy button.
+    - Create a ZIP file with all your code (make sure to update APP_ENV to amazon in .env).
+    - Log into AWS and select Services from the main menu.
+    - Select Elastic Beanstalk. Select your Application.
+    - Click the Upload and Deploy button. Upload your ZIP file and give your build a label. Click the Deploy button.
 9. Deploy using a AWS Code Pipeline:
     - Add a buildspec.yml to the root of your application code.
     - Log into AWS and select Services from the main menu.
@@ -121,16 +121,9 @@ The Laravel framework is open-source software licensed under the [MIT license](h
     - To build and deploy your application:
     - Select the CodePipeline service from the Services dashboard. Open the Pipeline.
     - Either make a change to code in GitHub or click the Release change button to start a build and deployment.
-    - To access your application:
+10. To access your application:
     - Select the Elastic Beanstalk service from the Services dashboard. Open your Application.
     - Test your application: https://[APP NAME].[AWS REGION].elasticbeanstalk.com/
-
-100. First list item
-     - First nested list item
-
-1. First list item
-   - First nested list item
-     - Second nested list item
 
 ## Cloud Hosted Websites
 - [(Broken) Azure Project Link]().
