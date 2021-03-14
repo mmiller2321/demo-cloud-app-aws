@@ -71,36 +71,36 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-AWS
-Log into AWS and select Services from the main menu.
-Select RDS.
-Under the Create database section click the Create database button.
-Select the MySQL engine option and the 5.6 version edition radio button. Check the 'Enable options for free tier'. Click the Next button.
-Fill out the Specify DB details form:
-From Settings enter DB instance identifier enter instance name (i.e., mydatabaseinstance).
-From Settings enter Master username and password.
-Click the Next button.
-Leave all defaults in the Configure advanced settings form.
-From the RDS Dashboard select your database instance.
-Your database URL is listed under the Connect section under the Endpoint value.
-Make your database accessible from a Java application by clicking the Security groups link under the Details section for the database.
-In the Security Group setup select the Inbound Tab. Click the Edit button. Under the Source dropdown select the Anywhere option.
-In MySQL Workbench setup a connection using the AWS Database Endpoint URI and credentials. Create the 'cst-323' schema and tables by running the DDL script created from your development environment.
-Create and Configure the AWS PHP Application:
-Update app code in source control:
-It is possible to set environment specific configuration in your .env file for a PHP Laravel project.
-Log into AWS and select Services from the main menu.
-Select Elastic Beanstalk service.
-Click the 'Create new Application' link from the top right menu.
-Give your Application Name (i.e., TestApp). Click the Create button.
-Create your Application Environment by clicking the 'Create one now' link.
-Select the 'Web server environment' and click the Select button.
-Fill out the following fields in the Creating web server environment form:
-From Environment Information Domain: Give your Application a name (i.e., test-app).
-From Base configuration: Select PHP from the Preconfigured platform options. Upload a ZIP file of your PHP application.
-Click the Create Environment button. Wait for environment to get built.
-From the Elastic Beanstalk application screen click the App URL to validate application is running properly.
-Deploy Manually:
+## AWS
+1. Log into AWS and select Services from the main menu.
+2. Select RDS.
+3. Under the Create database section click the Create database button.
+4. Select the MySQL engine option and the 5.6 version edition radio button. Check the 'Enable options for free tier'. Click the Next button.
+5. Fill out the Specify DB details form:
+    - From Settings enter DB instance identifier enter instance name (i.e., mydatabaseinstance).
+    - From Settings enter Master username and password.
+    - Click the Next button.
+    - Leave all defaults in the Configure advanced settings form.
+6. From the RDS Dashboard select your database instance.
+    - Your database URL is listed under the Connect section under the Endpoint value.
+    - Make your database accessible from a Java application by clicking the Security groups link under the Details section for the database.
+    - In the Security Group setup select the Inbound Tab. Click the Edit button. Under the Source dropdown select the Anywhere option.
+    - In MySQL Workbench setup a connection using the AWS Database Endpoint URI and credentials. Create the 'cst-323' schema and tables by running the DDL script created from your development environment.
+7. Create and Configure the AWS PHP Application:
+    - Update app code in source control:
+        ~ It is possible to set environment specific configuration in your .env file for a PHP Laravel project.
+    - Log into AWS and select Services from the main menu.
+    - Select Elastic Beanstalk service.
+    - Click the 'Create new Application' link from the top right menu.
+    - Give your Application Name (i.e., TestApp). Click the Create button.
+    - Create your Application Environment by clicking the 'Create one now' link.
+    - Select the 'Web server environment' and click the Select button.
+    - Fill out the following fields in the Creating web server environment form:
+        ~ From Environment Information Domain: Give your Application a name (i.e., test-app).
+        ~ From Base configuration: Select PHP from the Preconfigured platform options. Upload a ZIP file of your PHP application.
+        ~ Click the Create Environment button. Wait for environment to get built.
+        ~ From the Elastic Beanstalk application screen click the App URL to validate application is running properly.
+8. Deploy Manually:
 Create a ZIP file with all your code (make sure to update APP_ENV to amazon in .env).
 Log into AWS and select Services from the main menu.
 Select Elastic Beanstalk. Select your Application.
